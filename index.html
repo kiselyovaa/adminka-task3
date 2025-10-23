@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style1.css">
+  <title>Aura</title>
+  
+</head>
+<body>
+    <div id="successModal" class="modal" style="display: none;">
+  <div class="modal-content"><span class="close-button" onclick="closeModal()">&times;</span>
+    <div class="modal-2-content">
+    <p class="modal-title">Ваша заявка успешно отправлена</p>
+    <p class="modal-subtitle">С Вами свяжутся в течение 24 часов</p>
+    <button class="modal-button" onclick="goToMain()">на главную</button></div>
+  </div>
+</div>
+<div class="paddingall">
+  <header>
+    <div class="logo"><img style="width: 70px;" src="./img/Component118.png" alt="Логотип компании"></div>
+    <nav class="nav-links">
+      <a href="#">главная</a>
+      <a href="#">о студии</a>
+      <a href="services.html">услуги и цены</a>
+      <a href="#">проекты</a>
+      <a href="blog.html">блог</a>
+    </nav>
+	<a href="#contactSection" class="contact-btn">Контакты</a>
+
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <div class="hero-title">
+        студия интерьерного<br>
+        дизайна
+      </div>
+      <p class="hero-subtitle">разрабатываем современные и качественные дизайн решения для вашего дома</p>
+    </div>
+    <a class="project-btn" href="#progect"> заказать проект </a>
+  </div>
+
+  <section style="margin-bottom: 100px;" class="about">
+    <img style="margin-bottom: 100px; object-fit: cover; width: 100%; height: 570px;" src="./img/p1.jfif" alt="Изображение главного экрана">
+    <div class="about-content">
+      <h2>о нас</h2>
+      <div>
+        <p>Мы стремимся создать уникальное пространство для каждого клиента, учитывая все ваши пожелания и потребности. Наша студия — это команда профессионалов, готовых воплотить в жизнь ваши мечты о идеальном интерьере. Мы гордимся своим опытом и качеством работы, что позволяет нам создавать стильные и функциональные пространства.</p>
+        <a href="#">узнать подробнее</a>
+      </div>
+    </div>
+  </section>
+<section style="margin-bottom: 100px;" class="services">
+  <h2>услуги</h2>
+  <div style="margin-left: 20px;" class="service-cards">
+    <div class="service-card">
+      <img src="./img/Component26.png" alt="сотрудник 1">
+    </div>
+    <div class="service-card">
+      <img src="./img/Component27.png" alt="сотрудник 2">
+    </div>
+    <div class="service-card">
+      <img src="./img/Component28.png" alt="сотрудник 3">
+    </div>
+  </div>
+</section>
+
+<section style="margin-bottom: 100px;" class="advantages">
+  <h2>преимущества</h2>
+  <div class="advantages-content">
+    <div class="advantage-item">
+      <h3>качество</h3>
+      <p>Мы стремимся создать уникальное пространство для каждого клиента, учитывая все ваши пожелания и потребности.</p>
+    </div>
+    <div class="advantage-item">
+      <h3>гарантии</h3>
+      <p>Мы предоставляем гарантии на наши рекомендации. Если советы не приведут к ожидаемым результатам, мы готовы предложить дополнительные консультации.</p>
+    </div>
+    <div class="advantage-item">
+      <h3>индивидуальный подход</h3>
+      <p>Мы разрабатываем персонализированные решения, ориентированные на потребности клиента и особенности целевой аудитории.</p>
+    </div>
+    <div class="advantage-item">
+      <h3>функциональность</h3>
+      <p>Мы учитываем практическую сторону дизайна, обеспечивая функциональность каждого элемента интерьера.</p>
+    </div>
+  </div>
+</section>
+<section style="margin-bottom: 100px;" class="services">
+  <h2>команда</h2>
+  <div class="service-cards">
+    <div class="service-card">
+      <img src="./img/Component16.png" alt="услуга 1">
+    </div>
+    <div class="service-card">
+      <img src="./img/Component24.png" alt="услуга 2">
+    </div>
+    <div class="service-card">
+      <img src="./img/Component25.png" alt="услуга 3">
+    </div>
+  </div>
+</section>
+
+<section style="margin-bottom: 100px;" class="services">
+  <h2>форма <br>заявки</h2>
+  <div class="service-cards" id="progect">
+    <div style="width: 550px;" class="form-container">
+      <form id="zform" style="justify-content: center;">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Номер телефона</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="contact-method">Способ связи</label>
+        <input type="text" id="contact-method" name="contact-method" required>
+
+        <label for="service">Интересующая услуга</label>
+        <input type="text" id="service" name="service" required>
+
+        <label for="preferences">Пожелания</label>
+        <textarea id="preferences" name="preferences"></textarea>
+
+        <button type="submit">отправить</button>
+    </form>
+    </div>
+  </div>
+</section>
+    <section style="margin-bottom: 100px;" class="services"><h2>контакты</h2>
+<div style="margin-bottom: 100px;" class="contacts-section" id="contactSection">
+    <div class="contact-info">
+        <div class="contact-item">
+            <p>Телефон: +7 920 654 95 85</p><p>Почта: aura@yandex.ru</p>
+        </div>
+        <div class="contact-item">
+            <p>Адрес: г. Санкт-Петербург,<br> Кожевенная линия 40</p>
+        </div>
+        <div class="contact-item">
+            <p>Пн-Пт - 09:00 - 21:00 <br> Сб-Вс - выходной</p>
+        </div>
+    </div>
+    <div style="margin-bottom: 100px;" class="social-buttons">
+        <button>Instagram</button>
+        <button>VK</button>
+        <button>Pinterest</button>
+        <button>Telegram</button>
+    </div>
+</div>
+</section>
+</div>
+<footer style="margin: 40px auto 0; text-align: center;" class="footer">
+    <div class="footer-left">
+        <div style="" class="footer-logo"><img style="width: 70px;" src="./img/Component118(1).png" alt="Светлый логотип"></div>
+        <div class="footer-info">
+            <p>Телефон: +7 920 654 95 85</p>
+            <p>Почта: aura@yandex.ru</p>
+        </div>
+    </div>
+    <div class="footer-center footer-links">
+        <a href="#">главная</a>
+        <a href="#">о студии</a>
+        <a href="#">услуги и цены</a>
+        <a href="#">проекты</a>
+        <a href="#">блог</a>
+    </div>
+    <div class="footer-right">
+        <p>Адрес: г. Санкт-Петербург, <br>Кожевенная линия 40</p>
+    </div>
+</footer>
+    <div style="background-color: #333; color: #fff; display: flex; padding-bottom: 20px; flex-wrap: nowrap; gap: 20px; flex-direction: row; justify-content: center; align-items: flex-end;" class="footer-bottom-links">
+        <a href="#">оферта</a>
+        <a href="#">политика</a><br><br>
+    </div>
+<script>
+  function showModal() {
+    document.getElementById("successModal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("successModal").style.display = "none";
+  }
+
+  function goToMain() {
+    window.location.href = "file:///D:/работы%20ВУЗ/web-design/flex/index.html#";
+	document.getElementById("successModal").style.display = "none";
+  }
+
+  document.getElementById("zform").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+    showModal(); 
+  });
+</script>
+</body>
+
+</html>
